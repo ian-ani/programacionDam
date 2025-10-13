@@ -24,7 +24,13 @@ A més, la classe Principal té el mètode:
 
 ### 1. Explicad QUÈ FA EL MÈTODE MAIN.
 
-El método `main` funciona como *entrypoint* para la clase.
+El método `main` funciona como *entrypoint* para la clase, aquí se instancian tres objetos de la clase **Coche** y agrupa las llamadas a métodos de cada objeto.  
+
+Primero instancia los tres coches de la clase Coche y les da varios atributos (marca, modelo y color) que se pasan al constructor.  
+Después se instancia **Random** de la librería **util** de Java para conseguir un número aleatorio que servirá para asignar la velocidad inicial de cada coche. Dicha velocidad se asigna en la llamada al método `acelera()` pasándose como parámetro.  
+Se pinta por pantalla la información de los tres coches.  
+Posteriormente se vuelve a generar otros tres números aleatorios para nuevamente cambiar la velocidad de cada uno de los tres coches, pasando por parámetro al método `frena()` dichos valores.  
+Por último, se pinta de nuevo la información de los tres coches.
 
 ### 2. Posad un punt de ruptura (breakpoint) en la línia 27 del mètode main de la classe Principal i esbrineu els valors de les variables velocitat_nueva1, velocitat_nueva2 i velocitat_nueva3. Esbrineu també quines dades tenen en els seus paràmetres els cotxes amb variables c, c2 i c3.
 
